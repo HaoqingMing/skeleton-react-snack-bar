@@ -1,0 +1,62 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.c-item {
+  width: 370px;
+  background-color: #fff;
+  border: 2px solid #ebebeb;
+}
+
+.c-item__top .c-skeleton-square {
+  height: 195px;
+  width: 100%;
+
+  /* Ugly hack to fix a strange
+   * Chrome compositing problem.
+   */
+  opacity: 0.99;
+}
+
+.c-item__center {
+  max-width: 330px;
+}
+
+.c-item__center,
+.c-item__bottom {
+  padding-left: 15px;
+}
+
+.c-item__center .c-skeleton-line:first-child {
+  height: 22px;
+  width: 235px;
+  margin-bottom: 0;
+}
+
+.c-item__center .c-skeleton-line:nth-child(2) {
+  height: 18px;
+  width: 280px;
+  margin-bottom: 10px;
+}
+
+.c-item__bottom {
+  max-width: 330px;
+}
+
+.c-item__bottom .c-skeleton-line:first-child {
+  height: 13px;
+  width: 200px;
+  margin-bottom: 2px;
+}
+
+.c-item__bottom .c-skeleton-line:nth-child(2) {
+  height: 13px;
+  width: 140px;
+}
+
+.c-item__add .c-skeleton-square {
+  height: 49px;
+  display: block;
+  margin-top: 7.5px;
+}
